@@ -10,15 +10,18 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static("../public"));
 
 app.post("/api/notes", (req, res) => {
-  const newNote = req.body;
-  console.log(newNote);
-  db.push(newNote);
+  const noted = req.body;
+  db.push(noted);
   res.send(db);
-  console.log(db);
   fs.writeFile("../db/db.json", JSON.stringify(db), err => {
     if (err) throw err;
-    console.log("saved to database!");
+    console.log("New Note saved to database!");
   });
+});
+
+app.delete('/api/notes', (req, res) => {
+  console.log('maybe deleted a note?');
+
 });
 
 app.get("/api/notes", (req, res) => {
