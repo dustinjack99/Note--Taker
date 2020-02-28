@@ -25,9 +25,9 @@ var saveNote = function(note) {
 };
 
 // A function for deleting a note from the db
-var deleteNote = function(id) {
+var deleteNote = function() {
   return $.ajax({
-    url: "api/notes/" + id,
+    url: "/api/notes/" + id,
     method: "DELETE"
   });
 };
@@ -50,7 +50,7 @@ var renderActiveNote = function() {
 };
 
 // Get the note data from the inputs, save it to the db and update the view
-var handleNoteSave = function() {
+var handleNoteSave = () => {
   var newNote = {
     title: $noteTitle.val(),
     text: $noteText.val()
