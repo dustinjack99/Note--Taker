@@ -1,4 +1,4 @@
-# Note--Taker
+# Note-Taker
 Backend solution to the Note Taker app.
 
 ## Saving to Database
