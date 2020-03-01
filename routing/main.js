@@ -22,9 +22,7 @@ app.post("/api/notes/", (req, res) => {
 });
 
 app.delete('/api/notes/:id', (req, res) => {
-  console.log(req.params.id);
   for (let i = 0; i < db.length; i++) {
-    
     if (req.params.id === db[i].id) {
       db.splice(i, 1);
       res.send(db);
