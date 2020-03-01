@@ -1,6 +1,6 @@
 # Note--Taker
 Backend solution to the Note Taker app.
 
-![](public/assets/readme_gifs/savedatabase.gif)
+![Saving Notes to Database](public/assets/readme_gifs/savedatabase.gif)
 
-![](public/assets/readme_gifs/deletedatabase.gif)
+![Deleting Notes from Database](public/assets/readme_gifs/deletedatabase.gif)
