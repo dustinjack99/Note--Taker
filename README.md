@@ -4,7 +4,7 @@ Backend solution to the Note Taker app.
 ## Saving to Database
 ![ ](public/assets/readme_gifs/savedatabase.gif)
 
-<p> The database works! Entering a title and body to the note will populate a save icon.
+<p> Simply write a note! Entering a title and body to the note will populate a save icon.
   Once clicked, the icon will save the note to the local database @ db.json. Using the
   uuid npm package, a unique ID is generated for each note entered. (Props to TA Jason 
   Roundtree for helping me find that package - sup, Jason!) </p>
